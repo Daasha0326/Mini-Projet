@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Transaction</title>
+</head>
+
+<body>
+    <center>
+        <h2 style="color:red">Breukh-Transfert</h2>
+        <!-----------------------------------Expedieur---------------------------------------------->
+        <div style="display: flex; flex-direction: column;">
+            <h5 class="expedit" style="display: flex; justify-content: left;">Expéditeur</h5>
+            <div style="width: 100%; background-color: black; height:0.1vh;"></div>
+        </div>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputCompteE" class="form-label">N°Compte/Tel</label>
+                <input type="text" class="form-control" id="inputCompteE">
+            </div>
+            <div class="col-md-6">
+                <label for="inputNomE" class="form-label">Nom Complet</label>
+                <input type="text" class="form-control" id="inputNomE">
+            </div>
+         <!------------------------------------ TRANSACTIONS -------------------------------------------->
+         <div style="display: flex; flex-direction: column;">
+            <h5 style="display: flex; justify-content: left;">Transaction</h5>
+            <div style="width: 100%; background-color: black; height:0.1vh;"></div>
+        </div>
+            <div class="col-12">
+                <label for="inputMontant" class="form-label" style="display: flex; justify-content: left;">Montant</label>
+                <input type="number" class="form-control" id="inputMontant">
+            </div>
+            <div class="col-md-6">
+                <label for="idFrs" class="form-label">Fournisseur</label>
+                <select name="founisseur" id="idFrs" class="a form-control">
+                    <option value="">selectionner un fournisseur</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="idtTrs" class="form-label">Transaction</label>
+                <select name="transfert" id="idTrs" class="a form-control">
+                    <option value="">selectionner un type</option>
+                </select>
+            </div>
+            <!---------------------------------Destinataire--------------------------------------------------------->
+            <div style="display: flex; flex-direction: column;">
+                <h5 style="display: flex; justify-content: left;">Destinataire</h5>
+                <div style="width: 100%; background-color: black; height:0.1vh;"></div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCompteD" class="form-label">N°Compte/Tel</label>
+                <input type="text" class="form-control" id="inputCompteD">
+            </div>
+            <div class="col-md-6">
+                <label for="inputNomD" class="form-label">Nom Complet</label>
+                <input type="text" class="form-control" id="inputNomD">
+            </div>
+            
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">VALIDER</button>
+            </div>
+        </form>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+    <script src="trans.js"></script>
+</body>
+</html>
